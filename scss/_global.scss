@@ -4,6 +4,10 @@ body {
 }
 
 body {
+	font-family: Plus Jakarta Sans;
+	font-style: normal;
+	color: $text-primary;
+	background-color: $bg-color;
 	&._lock {
 		overflow: hidden;
 	}
@@ -23,9 +27,22 @@ body {
 }
 
 [class*="__container"]{
-  max-width: 1420px;
+  max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.button {
+	padding: 13px 24px;
+    border-radius: 30px;
+	color: #fff;
+	border: none;
+	background-color: $accent-color;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 150%;
+	letter-spacing: -0.32px;
 }
 
 
