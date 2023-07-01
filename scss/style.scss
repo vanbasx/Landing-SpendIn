@@ -113,9 +113,6 @@
 			margin: auto;
 		}
 	}
-	// .menu__item
-	&__item {
-	}
 	// .menu__link
 	&__link {
 		font-size: 18px;
@@ -178,18 +175,129 @@
             background-color: transparent;
 		}
 	}
+	@media(max-width: 524px) {
+		box-shadow: 4px 8px 24px 0px rgba(36, 107, 253, 0.25);
+	}
 }
 // .elipseRight-img
 .elipseRight-img {
     position: absolute;
     left: 0;
     z-index: -1;
+	
 }
 // .elipseLeft-img
 .elipseLeft-img {
     position: absolute;
     right: 0;
     z-index: -1;
+	width: clamp(11.875rem, 7.107rem + 23.84vw, 28.563rem);
 }
 
 // -------------/header-------------
+
+
+
+// -------------introduction-------------
+
+.introduction {
+	position: relative;
+	margin-top: clamp(5rem, 4.286rem + 3.57vw, 7.5rem);
+	// .introduction__container
+	&__container {
+	}
+	// .introduction__title
+	&__title {
+		text-align: center;
+		font-size: clamp(1.75rem, 0.964rem + 3.93vw, 4.5rem);
+		font-weight: 700;
+		line-height: 150%;
+		letter-spacing: -2.16px;
+		color: #fff;
+		width: clamp(18.125rem, 9.946rem + 40.89vw, 46.75rem);
+		margin: 0 auto;
+		padding-bottom: 12px;
+		@media(max-width: 524px) {
+			text-align: left;
+		}
+	}
+	// .introduction__text
+	&__text {
+		color: #90a3bf;
+		padding-top: 12px;
+		text-align: center;
+		font-size: clamp(1rem, 0.857rem + 0.71vw, 1.5rem);
+		font-weight: 400;
+		line-height: 150%;
+		letter-spacing: -0.48px;
+		width: clamp(18.125rem, 12.214rem + 29.55vw, 38.813rem);
+		margin: 0 auto;
+		margin-bottom: 24px;
+		@media(max-width: 524px) {
+			text-align: left;
+		}
+	}
+	&__buttons {
+		justify-content: center;
+		display: flex;
+		margin-bottom: clamp(3.5rem, 2.857rem + 3.21vw, 5.75rem);
+		gap: 24px;
+		@media(max-width: 524px) {
+			display: block;
+		}
+	}
+	// .introduction__btn
+	&__btn {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 150%;
+		letter-spacing: -0.32px;
+		@media(max-width: 524px) {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+		}
+	}
+	// .introduction__img
+	&__img {
+		border-radius:12px 12px 0 0;
+		width: clamp(18.125rem, 1.875rem + 81.25vw, 75rem);
+		margin: 0 auto;
+		@media(max-width: 524px) {
+			display: none;
+		}
+	}
+	&__img-big {
+		border-radius:12px 12px 0 0;
+		width: clamp(18.125rem, 1.875rem + 81.25vw, 75rem);
+		margin: 0 auto;
+		display: none;
+		@media(max-width: 524px) {
+			display: block;
+		}
+	}
+}
+.ellipceIntrodaction-img {
+	position: absolute;
+	left: 0;
+	z-index: -1;
+	bottom: 0;
+	width: clamp(11.875rem, 7.107rem + 23.84vw, 28.563rem);
+}
+.pricing {
+	background-color: #1a202c;
+	border: 1px solid #1a202c;
+	color:#C3D4E9;
+	transition: all .2s;
+		&:hover {
+			background-color: transparent;
+			color: #fff;
+		}
+	@media(max-width: 524px) {
+		margin-top: 24px;
+		background-color: transparent;
+		border: none;
+	}
+}
+
+// -------------/introduction-------------
