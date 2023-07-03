@@ -311,6 +311,7 @@
 .benefit {
 	background-color: #fff;
 	padding-top: clamp(2rem, 0.429rem + 7.86vw, 7.5rem);
+	padding-bottom: clamp(2rem, 0.429rem + 7.86vw, 7.5rem);
 	// .benefit__container
 	&__container {
 
@@ -600,6 +601,7 @@
 	}
 	// .automation__img
 	&__img {
+		padding-top: 32px;
 		@media (max-width: 1056px) {
 			margin: 0 auto;
 		}
@@ -715,3 +717,211 @@
 }
 
 // -------------/automation-------------
+
+
+
+// -------------testimonials-------------
+
+.testimonials {
+	position: relative;
+	padding-top: clamp(2rem, 0.429rem + 7.86vw, 7.5rem);
+	padding-bottom: clamp(2rem, 0.429rem + 7.86vw, 7.5rem);
+	// .testimonials__container
+	&__container {
+	}
+	// .testimonials__subtitle
+	&__subtitle {
+		text-align: center;
+		color: $accent-color;
+		font-size: clamp(0.75rem, 0.568rem + 0.91vw, 1.25rem);
+		font-weight: 600;
+		line-height: 150%;
+		letter-spacing: -0.4px;
+		padding-bottom: 12px;
+		@media (max-width: 414px) {
+			text-align: left;
+			max-width: 295px;
+			margin: 0 auto;
+		}
+	}
+	// .testimonials__title
+	&__title {
+		color: #fff;
+		text-align: center;
+		font-size: clamp(1.5rem, 1.214rem + 1.43vw, 2.5rem);
+		font-weight: 700;
+		line-height: 150%;
+		letter-spacing: -1.2px;
+		padding-bottom: 24px;
+		@media (max-width: 414px) {
+			text-align: left;
+			max-width: 295px;
+			margin: 0 auto;
+		}
+	}
+	// .testimonials__text
+	&__text {
+		padding-bottom: clamp(2rem, 1.429rem + 2.86vw, 4rem);
+		color: #90A3BF;
+		text-align: center;
+		font-size: clamp(0.875rem, 0.768rem + 0.54vw, 1.25rem);
+		font-weight: 400;
+		line-height: 150%;
+		letter-spacing: -0.4px;
+		max-width: 568px;
+		margin: 0 auto;
+		@media (max-width: 829px) {
+			max-width: 390px;
+		}
+		@media (max-width: 414px) {
+			text-align: left;
+			max-width: 295px;
+		}
+	}
+}
+
+.swiper {
+	@media (max-width: 1199px) {
+		width: 785px;
+	}
+	@media (max-width: 829px) {
+		width: 400px;
+	}
+	@media (max-width: 426px) {
+		width: 300px;
+	}
+	// .swiper__buttons
+	&__buttons {
+		display: flex;
+		gap: 24px;
+		justify-content: center;
+	}
+}
+.swiper-wrapper {
+	margin-bottom: clamp(2rem, 1.429rem + 2.86vw, 4rem);
+}
+.swiper-slide {
+}
+
+.swiper-item {
+	background-color: #1A202C;
+	border-radius: 12px;
+	margin: 0 auto;
+	width: 320px;
+	height: 300px;
+	padding: 30px;
+	@media (max-width: 430px) {
+		padding: 20px;
+		width: 85%;
+	}
+	@media (max-width: 340px) {
+		padding: 20px;
+		width: 80%;
+	}
+	// .item__title
+	&__title {
+		color: #fff;
+		font-size: clamp(0.875rem, 0.804rem + 0.36vw, 1.125rem);
+		font-weight: 600;
+		line-height: 150%;
+		letter-spacing: -0.36px;
+		padding-bottom: 16px;
+		position: relative;
+		&::after {
+			background-color: #596780;
+			opacity: 0.20000000298023224;
+			position: absolute;
+			display: block;
+			content: "";
+			height: 1px;
+			width: 100%;
+			bottom: -155px;
+			@media (max-width: 430px) {
+				bottom: -160px;
+			}
+		}
+	}
+	// .item__text
+	&__text {
+		color: #F3F5F7;
+		font-size: clamp(0.813rem, 0.759rem + 0.27vw, 1rem);
+		font-weight: 500;
+		line-height: 150%;
+		letter-spacing: -0.32px;
+	}
+}
+.user {
+	position: absolute;
+	bottom: 30px;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	// .user__img
+	&__img {
+		border-radius: 12px;
+		width: clamp(3.625rem, 3.411rem + 1.07vw, 4.375rem);
+	}
+	// .user__info
+	&__info {
+		
+	}
+	// .user__name
+	&__name {
+		color: #fff;
+		font-size: clamp(1rem, 0.964rem + 0.18vw, 1.125rem);
+		font-weight: 700;
+		line-height: 150%;
+		letter-spacing: -0.54px;
+	}
+	// .user__desc
+	&__desc {
+		color:#C3D4E9;
+		font-size: clamp(0.75rem, 0.714rem + 0.18vw, 0.875rem);
+		font-weight: 400;
+		line-height: 150%;
+		letter-spacing: -0.28px;
+	}
+}
+.swiper-button-prev {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	padding-top: 14px;
+	border-radius: 100px;
+	background:#1A202C;
+	cursor: pointer;
+	transition: all .2s;
+	&:hover {
+		background: $accent-color;
+		box-shadow: 4px 8px 24px 0px rgba(36, 107, 253, 0.25);
+	}
+}
+.swiper-button-next {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	padding-top: 14px;
+	border-radius: 100px;
+	background:#1A202C;
+	transition: all .2s;
+	cursor: pointer;
+	&:hover {
+		background: $accent-color;
+		box-shadow: 4px 8px 24px 0px rgba(36, 107, 253, 0.25);
+	}
+}
+.swiper-button-disabled {
+	opacity: 0.4; /* Измените здесь желаемый стиль кнопок */
+	cursor: pointer;
+	&:hover {
+		background: #1A202C;
+	}
+}
+.button__img {
+	padding-top: 2px;
+	margin: auto;
+}
+
+
+
+// -------------/testimonials-------------
