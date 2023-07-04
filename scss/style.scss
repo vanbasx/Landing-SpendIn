@@ -237,6 +237,7 @@
 		margin-bottom: 24px;
 		@media(max-width: 524px) {
 			text-align: left;
+			width: clamp(18.125rem, 9.946rem + 40.89vw, 46.75rem);
 		}
 	}
 	&__buttons {
