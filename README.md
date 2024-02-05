@@ -17,6 +17,7 @@ This repository contains the source code for the SpendIn landing page, a respons
 
 Feel free to contribute by submitting issues or pull requests. Make sure to follow the project's coding style and conventions.
 
-![image](https://github.com/vanbasx/Landing-SpendIn/assets/131404622/7597c5af-d1ed-4637-b434-4587f3b77ef9)
+![image](https://github.com/vanbasx/Landing-SpendIn/assets/131404622/d449365b-8453-414a-b5ca-78098fb15258)
+
 
 
