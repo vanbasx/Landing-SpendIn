@@ -16,3 +16,6 @@ This repository contains the source code for the SpendIn landing page, a respons
 ## Contributing
 
 Feel free to contribute by submitting issues or pull requests. Make sure to follow the project's coding style and conventions.
+
+![Uploading image.png…]()
+
