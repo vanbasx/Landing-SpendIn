@@ -1,6 +1,6 @@
 # [SpendIn Landing Page](https://vanbasx.github.io/Landing-SpendIn/)
 
-This repository contains the source code for the SpendIn landing page, a responsive web page built using Gulp, Webpack, HTML, CSS (with SCSS), JavaScript, and Swiper.js for carousel functionality.
+This repository contains the source code for the SpendIn landing page, a responsive web page built using Gulp, Webpack, HTML, CSS (with SCSS), JavaScript, Swiper.js for carousel functionality and MixlitIp.js for sorted functionality.
 
 
 ## Features
